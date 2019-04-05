@@ -1,0 +1,30 @@
+package uk.ac.qub.eeecs.game.cardDemo.Containers;
+
+import android.graphics.Bitmap;
+
+import java.util.ArrayList;
+
+import uk.ac.qub.eeecs.gage.world.GameScreen;
+import uk.ac.qub.eeecs.game.cardDemo.Cards.Card;
+
+/**
+ * Created by 40178070(Brandon) on 15/01/2018.
+ */
+
+public class MeleeContainer extends Container {
+
+    //Constructor
+    public MeleeContainer(float x, float y, float width, float height, int maxNoOfCards, GameScreen gameScreen) {
+        super(x, y, width, height, maxNoOfCards, gameScreen);
+    }
+
+    //Adds to the melee container list of cards
+    public void addCard(ArrayList<Card> currentCards, int posOfCard) {
+        addMeleeContainer(currentCards.get(posOfCard), posOfCard);
+    }
+
+
+    private void addMeleeContainer(Card card, int posOfCard) {
+
+    }
+}
